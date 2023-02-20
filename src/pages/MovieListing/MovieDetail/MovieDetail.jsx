@@ -22,7 +22,7 @@ const MovieDetail = () => {
     };
   }, [dispatch, id]);
   return (
-    <div className="movie-section">
+    <div className="movie-section" id="movie-section">
       {Object.keys(data).length === 0 ? (
         <div>...Loading</div>
       ) : (
@@ -53,11 +53,11 @@ const MovieDetail = () => {
               <div className="section-right">
                 <div className="movie-title">{data?.name}</div>
                 <div className="movie-rating">
-                  <Rating key={data.id} data={data?.rating?.average} />
+                  <Rating key={data?.id} data={data?.rating?.average} />
                 </div>
                 <div className="movie-genres">
                   Genres:
-                  {data?.genres.map((item, index) => {
+                  {data?.genres?.map((item, index) => {
                     var products = "";
                     if (index === 0) {
                       products = item;
@@ -69,7 +69,7 @@ const MovieDetail = () => {
                   })}
                 </div>
                 <div className="showSummary">
-                  {data?.summary.replace(/(<([^>]+)>)/gi, "")}
+                  {data?.summary?.replace(/(<([^>]+)>)/gi, "")}
                 </div>
                 <div className="movie-cast">
                   {data?._embedded?.cast?.map((item, index) => {
@@ -78,9 +78,9 @@ const MovieDetail = () => {
                         <img
                           className="character"
                           src={
-                            item?.character?.image?.original
+                            item?.character?.image != null
                               ? item?.character?.image?.original
-                              : item?.character?.image?.original
+                              : item?.person?.image?.original
                           }
                           alt={data?.name}
                         />
@@ -89,7 +89,6 @@ const MovieDetail = () => {
                             <strong>{item?.person?.name}</strong>
                           </div>
                           <div className="CharacterIdentity">
-                            {" "}
                             as {item?.character?.name}
                           </div>
                         </div>

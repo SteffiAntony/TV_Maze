@@ -1,159 +1,155 @@
 @import "../../../components/common/common.scss";
 
-.qwer {
-  background-color: aliceblue;
-  font-size: larger;
-}
+#movie-section {
 
-.grid-container-element {
-  padding: 5rem 10rem 0rem 10rem;
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-}
-
-.grid-child-search {
-  margin: 10px;
-  width: 65%;
-}
-
-.characterIdentity{
-  margin: 2rem 1rem 1rem 1rem !important;
-}
-
-.movie-cast {
-  display: flex;
-  flex-flow: wrap;
-}
-.showSummary{
-  padding-top: 1rem;
-}
-
-.movie-poster .movie-genres {
-  display: flex;
-  justify-content: space-evenly;
-  color: $font-primary;
-  font-weight: 400;
-  margin-top: 20px;
-}
-
-.movie-section {
-  display: flex;
-  justify-content: space-evenly;
-  padding: 40px 0px;
-  color: $font-primary;
-  font-weight: 400;
-}
-
-.movie-rating {
-  padding-left: 3px;
-  color: $font-secondary;
-  display: flex;
-
-  span {
-    margin-right: 20px;
-  }
-}
-
-.movie-title {
-  font-size: 40px;
-  color: $font-primary;
-}
-
-.section-left {
-  margin-left: 5rem;
-  margin-right: 5rem;
-}
-
-.section-right {
-  margin-left: 5rem;
-  margin-right: 5rem;
-}
-
-.poster {
-  width: 25rem;
-    height: 30rem;
-}
-
-.character {
-  width: 5rem;
-}
-
-input {
-  width: 100%;
-}
-
-.searchbar-Div {
-  width: 100%;
-  height: 5%;
-}
-
-.grid-child-logo {
-  margin: 10px;
-  width: 35%;
-}
-
-input[type="text"] {
-  width: 100%;
-  height: 62px;
-  padding: 10px;
-  font-size: 17px;
-  border: none;
-  background: #f1f1f1;
-  font-family: "Helvetica";
-  font-style: italic;
-}
-
-#search {
-  width: 100% !important;
-}
-
-.grid-child-search {
-  margin: 10px;
-}
-
-.movieDetailList {
-  display: flex;
-  width: 100%;padding: 2rem 9rem 0rem 9rem;
-}
-
-.characterStyle {
-  display: flex;
-  width: 50%;
-  padding: 2rem 5rem 0 0;
-}
-@media only screen and (max-width: 992px) {
   .grid-container-element {
-    display: block;
-    text-align: center;
-    padding: 2rem;
+    padding: 5rem 10rem 0rem 10rem;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
   }
 
   .grid-child-search {
     margin: 10px;
-    width: 70%;
+    width: 65%;
+  }
+
+  .characterIdentity {
+    margin: 2rem 1rem 1rem 1rem !important;
+  }
+
+  .movie-cast {
+    display: flex;
+    flex-flow: wrap;
+  }
+
+  .showSummary {
     padding-top: 1rem;
   }
 
-  .grid-child-logo {
+  .movie-poster .movie-genres {
+    display: flex;
+    justify-content: space-evenly;
+    color: $font-primary;
+    font-weight: 400;
+    margin-top: 20px;
+  }
+
+  &.movie-section {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 40px 0px;
+    color: $font-primary;
+    font-weight: 400;
+  }
+
+  .movie-rating {
+    padding-left: 3px;
+    color: $font-secondary;
+    display: flex;
+  }
+
+  .movie-title {
+    font-size: 40px;
+    color: $font-primary;
+  }
+
+  .section-left {
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+
+  .section-right {
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+
+  .poster {
+    width: 25rem;
+    height: 30rem;
+  }
+
+  .character {
+    width: 5rem;
+  }
+
+  input {
     width: 100%;
   }
-}
 
-@media only screen and (max-width: 600px) {
   .searchbar-Div {
     width: 100%;
-    height: 100%;
+    height: 5%;
   }
 
-  .grid-child-search {
-    display: flex;
-    margin: 0;
-    float: right;
+  .grid-child-logo {
+    margin: 10px;
+    width: 35%;
+  }
+
+  input[type="text"] {
+    width: 100%;
+    height: 62px;
+    padding: 10px;
+    font-size: 17px;
+    border: none;
+    background: #f1f1f1;
+    font-family: "Helvetica";
+    font-style: italic;
   }
 
   #search {
-    width: fit-content;
+    width: 100% !important;
   }
 
+  .grid-child-search {
+    margin: 10px;
+  }
+
+  .movieDetailList {
+    display: flex;
+    width: 100%;
+    padding: 2rem 9rem 0rem 9rem;
+  }
+
+  .characterStyle {
+    display: flex;
+    width: 50%;
+    padding: 2rem 5rem 0 0;
+  }
+
+  @media only screen and (max-width: 992px) {
+    .grid-container-element {
+      display: block;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    .grid-child-search {
+      margin: 10px;
+      width: 70%;
+      padding-top: 1rem;
+    }
+
+    .grid-child-logo {
+      width: 100%;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .searchbar-Div {
+      width: 100%;
+      height: 100%;
+    }
+
+    .grid-child-search {
+      display: flex;
+      margin: 0;
+      float: right;
+    }
+
+    #search {
+      width: fit-content;
+    }
+  }
 }

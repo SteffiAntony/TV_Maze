@@ -49,7 +49,6 @@ const movieSlice = createSlice({
 });
 
 export const { removeSelectedShow } = movieSlice.actions;
-export const getAllMovies = (state) => state.movies.movies;
 export const getSeletedShow = (state) => state.movies.selectedShow;
 export const getMovieShows = (state) =>
   state.movies.movies.map((cinema) => cinema.show);
