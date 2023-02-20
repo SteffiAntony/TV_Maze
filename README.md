@@ -40,12 +40,18 @@ Without considering the environment setup and folder structuring, it has taken m
 
 6. A page refresh of the movie list (2nd view page) should display the entire movie list, so that the user can search by entering their desired keywords in the topmost input field for a filtered movie list.
 
-7. User could have the possibility to rate each shows/movie.
+7. Could have been used more api for detailing much more view.
 
 8. On search of movies in 3rd detailed view I could have come up with listing each movies detailed view (currently its navigating to 2nd movie listing page).
 
-9. A back button could be implemented in a detailed view.
+9. A back button could be implemented in the detailed view.
 
-10. Instead of loading text, more spinners could have been added.
+10. The handling of character images could have been improved.
 
-11. The responsiveness is not maintained completely, and it could be improved.
+11. The loading of text could have been replaced by adding more spinners.
+
+12. There is a lack of complete responsiveness, and it could be improved.
+
+13. There could be a better way of handling blurred images and space arrangement.
+
+14. Currently, when refreshing the page and navigating back to the previous page, the movie listing is not handled properly.
