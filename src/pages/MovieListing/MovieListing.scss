@@ -1,0 +1,83 @@
+@import "../../components/common/common.scss";
+
+#MovieListing {
+  .movie-list {
+    margin: 20px 0px;
+  }
+
+  .movie-container {
+    padding: 0rem 6rem 0rem 6rem;
+    display: flex;
+    flex-flow: wrap;
+  }
+
+  .searchbar-Div {
+    width: 100%;
+    height: 5%;
+  }
+
+
+  .grid-container-element {
+    padding: 5rem 6rem 0rem 6rem;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .grid-child-logo {
+    margin: 10px;
+    width: 40%;
+  }
+
+  input[type=text] {
+    width: 100%;
+    height: 62px;
+    padding: 10px;
+    font-size: 17px;
+    border: none;
+    background: #f1f1f1;
+    font-family: "Helvetica";
+    font-style: italic;
+  }
+
+  #search {
+    width: 100% !important;
+  }
+
+  .grid-child-search {
+    margin: 10px;
+    width: 50%;
+  }
+
+  @media only screen and (max-width: 992px) {
+    .grid-container-element {
+      display: block;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    .grid-child-search {
+      margin: 10px;
+      width: 100%;
+      padding-top: 1rem;
+    }
+
+    .grid-child-logo {
+      width: 100%;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .movie-container {
+      padding: 0;
+      width: 100%;
+    }
+  }
+
+  @media only screen and (max-width: 576px) {
+    .movie-container {
+      padding: 3.5rem;
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,36 @@
+@import "./components/common/common.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background: $primary-color;
+}
+
+.container {
+  margin: 0px 40px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.Loading {
+  color: $font-primary;
+  text-align: center;
+  margin: 5rem;
+  font-weight: 700;
+  font-size: 20px;
+}
+.app{
+  width: 100%;
+  height: 100vh;
+}
